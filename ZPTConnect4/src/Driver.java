@@ -1,9 +1,10 @@
 
+
 public class Driver {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.print("hello");
+		C4Board board = new board(6, 7);
+		board.display();
 
 	}
 
