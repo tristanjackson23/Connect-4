@@ -1,8 +1,12 @@
 package game;
 
 public class Cell {
-	public Cell ( int rows, int columns){
-		public int[][] board = new int[6][7];
+	private C4CellState state;
+	public Cell (){
+		state = C4CellState.EMPTY;
+		
 	}
+	
+	
 
 }
