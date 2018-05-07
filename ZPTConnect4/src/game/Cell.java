@@ -6,7 +6,4 @@ public class Cell {
 		state = C4CellState.EMPTY;
 		
 	}
-	
-	
-
 }
