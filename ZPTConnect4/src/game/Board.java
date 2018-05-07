@@ -7,13 +7,16 @@ public class Board {
 
 	public Board(int aRows, int aCols) {
 		board = new Cell[aRows][aCols];
-		/*
-		 * for (int i = 0; i < board.length; i++) { for (int j = 0; j <
-		 * board[i].length; j++) { board[i][j] = 'n'; } }
-		 */
+		for (int i = 0; i < board.length; i++) {
+			for (int j = 0; j < board[i].length; j++) {
+				board[i][j] = States.E;
+			}
+		}
+
 	}
 
-	public void deposit(int colour, int column, int[][] board) {/* need runtime exception for column full */
+	public void deposit(int colour, int column,
+			int[][] board) {/* need runtime exception for column full */
 		int lowest = 0;
 		for (int i = board.length - 1; i >= 0; i--) {
 			if (board[i][column] == 0) {
