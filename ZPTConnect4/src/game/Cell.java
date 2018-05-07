@@ -1,9 +1,9 @@
 package game;
 
 public class Cell {
-	private States state;
+	private State state;
 	public Cell (){
-		state = States.E;
+		state = State.E;
 		
 	}
 }

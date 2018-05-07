@@ -9,7 +9,7 @@ public class Board {
 		board = new Cell[aRows][aCols];
 		for (int i = 0; i < board.length; i++) {
 			for (int j = 0; j < board[i].length; j++) {
-				board[i][j] = States.E;
+				board[i][j] = State.E;
 			}
 		}
 
@@ -31,9 +31,19 @@ public class Board {
 	public String toString() {
 		for (int i = 0; i < board.length; i++) {
 			for (int j = 0; j < board[i].length; j++) {
-				System.out.print(board[i][j] + ' ');
+				System.out.print(board[i][j] + " " );
 			}
 			System.out.print("/n");
+		}
+		return null;
+	}
+	public void display() {
+		System.out.println("BOARD");
+		for (int i = 0; i < Rows; i++) {
+			for (int j = 0; j < Cols; j++) {
+				System.out.printf("%s ", board[i][j]);
+			}
+			System.out.println();
 		}
 	}
 }
