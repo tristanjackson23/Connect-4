@@ -44,6 +44,7 @@ public class Board {
 				System.out.printf("%s ", board[i][j]);
 			}
 			System.out.println();
-		}
+		} //thank you dark souls
+		
 	}
 }
